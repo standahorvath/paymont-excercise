@@ -1,0 +1,8 @@
+node_modules
+dist
+.git
+.claude
+docker
+!docker/prod/nginx.conf
+*.md
+.env*

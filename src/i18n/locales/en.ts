@@ -1,0 +1,108 @@
+import { type Resources } from "../types"
+
+export const en: Resources = {
+  common: {
+    appName: "Paymount Live",
+    language: {
+      label: "Language",
+      cs: "Czech",
+      en: "English",
+    },
+    theme: {
+      label: "Theme",
+      light: "Light",
+      dark: "Dark",
+      system: "System",
+    },
+    error: {
+      loadFailed: "Failed to load data.",
+      retry: "Try again",
+    },
+  },
+  validation: {
+    required: "This field is required.",
+    email: "Invalid email format.",
+  },
+  errors: {
+    invalidCredentials: "Invalid email or password.",
+  },
+  auth: {
+    title: "Welcome back",
+    description: "Sign in to manage your money securely in one place.",
+    email: "Email",
+    emailPlaceholder: "john.doe@paymount.eu",
+    password: "Password",
+    showPassword: "Show password",
+    hidePassword: "Hide password",
+    submit: "Sign in",
+  },
+  nav: {
+    dashboard: "Dashboard",
+    transactions: "Transactions",
+    account: "Account",
+    logout: "Log out",
+  },
+  dashboard: {
+    title: "Transactions overview",
+    availableBalance: "Available balance",
+    currencyAccounts: "Currency accounts",
+    live: "live",
+    last7d: "7 days",
+    recentTransactions: "Recent transactions",
+    viewAll: "View all",
+    empty: "No transactions yet.",
+  },
+  transactions: {
+    title: "Transactions",
+    filters: {
+      type: {
+        label: "Type",
+        all: "All",
+        income: "Income",
+        expense: "Expenses",
+      },
+      category: { label: "Category", all: "All categories" },
+      currency: { label: "Currency", all: "All currencies" },
+      period: {
+        label: "Period",
+        d7: "7 days",
+        d30: "30 days",
+        d90: "90 days",
+        all: "All time",
+      },
+      search: "Search description…",
+      clear: "Clear filters",
+    },
+    columns: {
+      date: "Date",
+      description: "Description",
+      category: "Category",
+      currency: "Currency",
+      type: "Type",
+      amount: "Amount",
+    },
+    typeBadge: { income: "Income", expense: "Expense" },
+    showing: "{{from}}–{{to}} of {{total}}",
+    empty: "No transactions match the filter.",
+    previous: "Previous",
+    next: "Next",
+  },
+  categories: {
+    income: "Income",
+    refund: "Refund",
+    groceries: "Groceries",
+    dining: "Dining",
+    housing: "Housing",
+    utilities: "Utilities",
+    transport: "Transport",
+    subscriptions: "Subscriptions",
+    shopping: "Shopping",
+    health: "Health",
+    entertainment: "Entertainment",
+    travel: "Travel",
+  },
+  account: {
+    title: "Account",
+    placeholder: "Account settings will appear here.",
+  },
+}

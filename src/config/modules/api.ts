@@ -1,0 +1,17 @@
+export const SIMULATED_LATENCY_MS = 1500
+
+export const QUERY_STALE_TIME_MS = 30000
+
+export const TRANSACTION_SEED_COUNT = 5000
+
+export const TRANSACTIONS_PAGE_SIZE = 25
+
+export const RECENT_TRANSACTIONS_COUNT = 6
+
+export const LIVE_BALANCE_REFETCH_MS = 5000
+
+export const LIVE_DRIFT_STEP_MINOR = 150000
+
+export const LIVE_DRIFT_SKIP_CHANCE = 0.6
+
+export const LIVE_DRIFT_DOWNWARD_BIAS = 0.55

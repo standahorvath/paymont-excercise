@@ -1,0 +1,23 @@
+# dev:  docker compose --profile dev up
+# prod: docker compose --profile prod up --build
+
+services:
+  app-dev:
+    profiles: [dev]
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  app-prod:
+    profiles: [prod]
+    build:
+      context: .
+      dockerfile: docker/prod/Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
